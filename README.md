@@ -1,55 +1,53 @@
 # Basic Student Management Project
 
-Este es un proyecto básico de gestión de estudiantes implementado con Python y Flask. Permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre un archivo CSV que almacena información de estudiantes. Cada estudiante tiene un nombre, curso y nota, y la información se gestiona a través de una interfaz web.
+This is a basic student management project implemented with Python and Flask. It allows CRUD (Create, Read, Update, Delete) operations on a CSV file that stores student information. Each student has a name, course, and grade, and the information is managed through a web interface.
+## Features
 
-## Características
-
-- **Visualización de estudiantes:** Muestra una lista de estudiantes en la página de inicio.
-- **Agregar estudiante:** Permite añadir un nuevo estudiante con su nombre, curso y nota.
-- **Editar estudiante:** Modifica la información de un estudiante existente.
-- **Eliminar estudiante:** Elimina un estudiante de la lista.
-- **Almacenamiento en CSV:** Los datos de estudiantes se guardan en un archivo `registro.csv`.
-
-## Requisitos
+-. **Student View:** Displays a list of students on the home page.
+-. **Add Student:** Allows adding a new student with their name, course, and grade.
+-. **Edit Student:** Modifies the information of an existing student.
+-. **Delete Student:** Removes a student from the list.
+-. **CSV Storage:** Student data is saved in a registro.csv file
+## Requirements
 
 - **Python** 3.x
-- **Flask** (Instalar usando `pip install flask`)
+- **Flask** (Install using pip install flask)
+## Installation
 
-## Instalación
-
-1. Clona el repositorio:
-   ```bash
+1. Clone the repository:
+  
    git clone https://github.com/FernadoKitzune/basic-project.git
 
-2.Accede al directorio del proyecto:
+2.Access the project directory:
   cd basic-project
 
-3.Instala Flask si no lo tienes ya instalado:
+3.Install Flask if you haven't done so already:
   pip install flask
 
-## Estructura del Proyecto
-mi_aplicacion.py: Archivo principal que inicia la aplicación Flask.
+## Project Structure
 
-gestion.py: Contiene las clases Estudiante y RegistroEstudiantes para manejar la lógica de estudiantes.
+mi_aplicacion.py: Main file that starts the Flask application.
 
-templates/: Carpeta que contiene las plantillas HTML (archivos index.html, agregar_estudiante.html, editar_estudiante.html).
+gestion.py: Contains the Student and StudentRecord classes to handle student logic.
 
-registro.csv: Archivo CSV en el cual se almacena la información de los estudiantes.
+templates/: Folder that contains the HTML templates (files index.html, agregar_estudiante.html, editar_estudiante.html).
 
-## Ejecucion 
+registro.csv: CSV file where student information is stored.
 
-1.Ejecuta el servidor Flask desde la terminal:
+## Execution 
+
+1.Run the Flask server from the terminal:
   python mi_aplicacion.py
 
-2.Abre tu navegador y accede a:
+2.Open your browser and go to:
  http://127.0.0.1:5000.
 
-## Rutas de la Aplicación
-/: Página de inicio que muestra la lista de estudiantes.
-/agregar: Formulario para agregar un nuevo estudiante.
-/editar/<nombre>: Página para editar la información de un estudiante específico.
-/eliminar/<nombre>: Ruta para eliminar un estudiante específico.
+## Here’s the translation
+/: Home page that displays the list of students.
+/agregar: Form to add a new student.
+/editar/<name>: Page to edit the information of a specific student.
+/eliminar/<name>: Route to delete a specific student.
 
-## Ejemplo de Datos
-El archivo registro.csv debe seguir este formato para almacenar correctamente los datos de los estudiantes:
-nombre,curso,nota.
+## Example Data
+The registro.csv file must follow this format to correctly store student data: 
+name,course,grade.
