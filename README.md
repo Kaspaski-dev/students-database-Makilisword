@@ -14,9 +14,10 @@ This is a basic student management project implemented with Python and Flask. It
 - **Flask** (Install using pip install flask)
 ## Installation
 
-1. Clone the repository:
-  
-   git clone https://github.com/FernadoKitzune/basic-project.git
+  1. Clone the repository:
+    
+    git clone https://github.com/Kaspaski-dev/students-database-Makilisword.git
+
 
 2.Access the project directory:
   cd basic-project
